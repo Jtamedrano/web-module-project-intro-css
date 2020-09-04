@@ -82,19 +82,34 @@ nav ul {
 nav li {
     margin: 5%;
     border-radius: 10px;
-    padding: 5%;
     text-align: center;
+
 }
 
 /* removes underline for a tags */
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav li {
+    border: .3em solid rgba(255, 255, 255, 0);
+}
+
 
 /* changes color of left link on top and bottom nav */
 .visit {
     background-color: #FF764E;
+}
+
+.visit:hover {
+    background-color: #cc6141;
+    border: .3em solid #9c4930;
+    box-shadow: 0 0 5px gray;
 }
 
 /* changes color of middle link on top and bottom nav */
@@ -102,9 +117,20 @@ nav a {
     background-color: #5ED3EB;
 }
 
+.learn:hover {
+    background-color: #49acc0;
+    border: .3em solid #357c8a;
+    box-shadow: 0 0 5px gray
+}
+
 /* changes color of right link on top and bottom nav */
 .involve {
     background-color: #FFCD69;
+}
+.involve:hover {
+    background-color: #c49d50;
+    border: .3em solid #8a6d33;
+    box-shadow: 0 0 5px gray
 }
 
 /*****************
