@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* Makes all font Roboto Mono */
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+/*****************
+** Header Section **
+******************/
+
+header {
+    width: 85%;
+    margin: 0 auto 3% auto;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.header-index {
+    display: flex;
+
+    margin: 0 auto 3% auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-index div {
+    margin: 10px;
+}
+
+.header-img {
+    flex: 1;
+}
+
+.header-img img {
+    border-radius: 200px;
+    width: 100%;
+}
+
+.header-txt {
+    flex: 3;
+    text-align: center;
+}
+
+
+header a {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3.8rem;
+    margin: 2%;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color .5s ease-out;
+}
+
+header a::after {
+    border-radius: 50%;
+    border-top: 4px solid #000;
+    content: "";
+    position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: .14em;
+    transition: .5s cubic-bezier(0,.5,0,1),
+        border-color .5s ease-out;
+}
+
+header a:hover {
+    color: #445724;
+    text-decoration: none;
+}
+
+header a:hover::after {
+    border-top: 4px solid #445724;
+    right: 0%;
+    left: 0%;
+}
+
+h2 {
+    margin: 2%;
+}
+
+h3 {
+    margin: 2%;
+    padding: 0 25%;
+}
+/*****************
+** Navs Section **
+******************/
+
+/* top and bottom nav */
+nav {
+    margin: 2% auto;
+    padding: 0 10%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    margin: 5%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* removes underline for a tags */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav li {
+    border: .3em solid rgba(255, 255, 255, 0);
+}
+
+
+/* changes color of left link on top and bottom nav */
+.visit {
+    background-color: #FF764E;
+    border: .3em solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0px #808080;
+    transition: border .2s ease-out, box-shadow .2s ease-out, background-color .2s ease-out;
+}
+
+.visit:hover {
+    background-color: #cc6141;
+    border: .3em solid #9c4930;
+    box-shadow: 0 0 5px #525252;
+}
+
+/* changes color of middle link on top and bottom nav */
+.learn {
+    background-color: #5ED3EB;
+    border: .3em solid #ffffff00;
+    box-shadow: 0 0 0px #808080;
+    transition: border .2s ease-out, box-shadow .2s ease-out, background-color .2s ease-out;
+}
+
+.learn:hover {
+    background-color: #49acc0;
+    border: .3em solid #357c8a;
+    box-shadow: 0 0 5px #525252;
+}
+
+/* changes color of right link on top and bottom nav */
+.involve {
+    background-color: #FFCD69;
+    border: .3em solid #ffffff00;
+    box-shadow: 0 0 0px #808080;
+    transition: border .2s ease-out, box-shadow .2s ease-out, background-color .2s ease-out;
+}
+.involve:hover {
+    background-color: #c49d50;
+    border: .3em solid #8a6d33;
+    box-shadow: 0 0 5px #525252;
+}
+
+/*****************
+** Main Section **
+******************/
+
+.main {
+    box-sizing: border-box;
+    background-color: #DDB9A3;
+    color: white;
+
+    width: 90%;
+    margin: 5% auto;
+    padding: 1% 2%;
+
+    text-align: center;
+}
+
+.main p {
+    margin: 1% 0;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.main p:nth-child(2) {
+    margin: 2% 0;
+}
+
+.main ol {
+    margin: auto 10%;
+    text-align: left;
+}
+
+/*****************
+** Card-Cont Section **
+******************/
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    text-align: center;
+    width: 20%;
+    
+}
+
+.card-img {
+    margin: 0 auto;
+}
+
+.cards img {
+    width: 60%;
+}
+
+.cards p {
+    font-size: .8rem;
+    padding: 3%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+/*****************
+** Footer Section **
+******************/
+
+footer {
+    background-color: #F9E7DC;
+    padding: 0 0 1% 0;
+}
+
+footer .img-holder {
+    width: 100%;
+    height: 300px;
+    background-image: url(assets/footer_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
