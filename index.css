@@ -182,7 +182,7 @@ nav li {
     color: white;
 
     width: 90%;
-    margin: 0 auto;
+    margin: 5% auto;
     padding: 1% 2%;
 
     text-align: center;
@@ -196,6 +196,11 @@ nav li {
 
 .main p:nth-child(2) {
     margin: 2% 0;
+}
+
+.main ol {
+    margin: auto 10%;
+    text-align: left;
 }
 
 /*****************
