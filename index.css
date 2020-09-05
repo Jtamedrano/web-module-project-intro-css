@@ -19,15 +19,21 @@ body {
 ******************/
 
 header {
-    display: flex;
     width: 85%;
+    margin: 0 auto 3% auto;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.header-index {
+    display: flex;
+
     margin: 0 auto 3% auto;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.2rem;
 }
 
-header div {
+.header-index div {
     margin: 10px;
 }
 
@@ -45,14 +51,38 @@ header div {
     text-align: center;
 }
 
-.header-txt h1 {
-    margin: 2%;
-}
 
-/* Makes Yosemite Park Guide 'Chelsea Market'*/
-h1 {
+header a {
     font-family: 'Chelsea Market', cursive;
     font-size: 3.8rem;
+    margin: 2%;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color .5s ease-out;
+}
+
+header a::after {
+    border-radius: 50%;
+    border-top: 4px solid #000;
+    content: "";
+    position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: .14em;
+    transition: .5s cubic-bezier(0,.5,0,1),
+        border-color .5s ease-out;
+}
+
+header a:hover {
+    color: #445724;
+    text-decoration: none;
+}
+
+header a:hover::after {
+    border-top: 4px solid #445724;
+    right: 0%;
+    left: 0%;
 }
 
 h2 {
@@ -104,33 +134,42 @@ nav li {
 /* changes color of left link on top and bottom nav */
 .visit {
     background-color: #FF764E;
+    border: .3em solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0px #808080;
+    transition: border .2s ease-out, box-shadow .2s ease-out, background-color .2s ease-out;
 }
 
 .visit:hover {
     background-color: #cc6141;
     border: .3em solid #9c4930;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px #525252;
 }
 
 /* changes color of middle link on top and bottom nav */
 .learn {
     background-color: #5ED3EB;
+    border: .3em solid #ffffff00;
+    box-shadow: 0 0 0px #808080;
+    transition: border .2s ease-out, box-shadow .2s ease-out, background-color .2s ease-out;
 }
 
 .learn:hover {
     background-color: #49acc0;
     border: .3em solid #357c8a;
-    box-shadow: 0 0 5px gray
+    box-shadow: 0 0 5px #525252;
 }
 
 /* changes color of right link on top and bottom nav */
 .involve {
     background-color: #FFCD69;
+    border: .3em solid #ffffff00;
+    box-shadow: 0 0 0px #808080;
+    transition: border .2s ease-out, box-shadow .2s ease-out, background-color .2s ease-out;
 }
 .involve:hover {
     background-color: #c49d50;
     border: .3em solid #8a6d33;
-    box-shadow: 0 0 5px gray
+    box-shadow: 0 0 5px #525252;
 }
 
 /*****************
